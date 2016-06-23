@@ -1,19 +1,17 @@
----
----
 
-@import 'config';
+@import '../../_scss/config';
 
-@import 'bourbon/bourbon';
+@import '../../_scss/bourbon/bourbon';
 
-@import 'base/poole';
-@import 'base/layout';
-@import 'base/global';
-@import 'base/syntax';
+@import '../../_scss/base/poole';
+@import '../../_scss/base/layout';
+@import '../../_scss/base/global';
+@import '../../_scss/base/syntax';
 
-@import 'component/sidebar';
-@import 'component/hero';
-@import 'component/post';
-@import 'component/page';
-@import 'component/tag';
-@import 'component/masthead';
-@import 'component/pagination';
+@import '../../_scss/component/sidebar';
+@import '../../_scss/component/hero';
+@import '../../_scss/component/post';
+@import '../../_scss/component/page';
+@import '../../_scss/component/tag';
+@import '../../_scss/component/masthead';
+@import '../../_scss/component/pagination';

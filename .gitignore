@@ -14,6 +14,7 @@ _site
 *.zip
 *.vi
 .idea
+.ftppass
 *~
 
 # OS or Editor folders

@@ -1,0 +1,29 @@
+{
+  "name": "my2kong.github.io",
+  "version": "1.0.0",
+  "description": "This is a jekyll template based on [Lanyon](https://github.com/poole/lanyon). See a live demo [here](http://codinfox.github.io).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my2kong/my2kong.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my2kong/my2kong.github.io/issues"
+  },
+  "homepage": "https://github.com/my2kong/my2kong.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-git": "^1.7.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "vinyl-ftp": "^0.4.5",
+    "vinyl-ftp-branch": "^0.2.1"
+  }
+}
