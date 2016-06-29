@@ -23,6 +23,7 @@
     "gulp-git": "^1.7.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
     "vinyl-ftp": "^0.4.5",
     "vinyl-ftp-branch": "^0.2.1"
   }

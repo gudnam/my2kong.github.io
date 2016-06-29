@@ -1,3 +1,4 @@
+/* prod */
 ---
 ---
 
@@ -17,3 +18,23 @@
 @import 'component/tag';
 @import 'component/masthead';
 @import 'component/pagination';
+
+
+/* dev
+@import '../../_scss/config';
+
+@import '../../_scss/bourbon/bourbon';
+
+@import '../../_scss/base/poole';
+@import '../../_scss/base/layout';
+@import '../../_scss/base/global';
+@import '../../_scss/base/syntax';
+
+@import '../../_scss/component/sidebar';
+@import '../../_scss/component/hero';
+@import '../../_scss/component/post';
+@import '../../_scss/component/page';
+@import '../../_scss/component/tag';
+@import '../../_scss/component/masthead';
+@import '../../_scss/component/pagination';
+*/

@@ -7,6 +7,7 @@ var replace     = require('gulp-replace');
 var cp          = require('child_process');
 var vfb         = require('vinyl-ftp-branch');
 var ftp         = require('vinyl-ftp');
+var sourcemaps  = require('gulp-sourcemaps');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -53,11 +54,13 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('public/css/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
         }).on('error', sass.logError))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('_site/public/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
