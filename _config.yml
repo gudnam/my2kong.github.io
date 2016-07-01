@@ -1,7 +1,7 @@
 # Site Info
-title: 콩둘.com
-tagline: 'A Jekyll theme based on Lanyon'
-description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+title: 콩로그
+tagline: '나는 코딩한다. 고로 나는 존재한다'
+description: '프론트엔드기술 HTML5, CSS, Javascript, 프로그래밍 언어 그리고 IT 기술을 연구하는 블로그입니다.'
 baseurl: ""
 url: http://my2kong.net
 logo: '/public/logo.png'
@@ -25,15 +25,15 @@ version: 1.0.0
 # About/contact
 author:
   name: 콩이아빠
-  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  description: 생계형 프론트엔드 개발자.
+  gravatar: 971e5f01f7cfad2974a6d361803d0778 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/lizhihao
-    github:    https://github.com/codinfox
-    # facebook:  <hide>
-    twitter:   https://twitter.com/Li_Zhihao
-    weibo:     http://weibo.com/41173780
-    email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
+    # linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/my2kong/
+    facebook:
+    twitter:   https://twitter.com/my2kong
+    # weibo:     http://weibo.com/41173780
+    email:     mailto:my2kong@naver.com
 
 # Navigation (2nd level links supported)
 nav:
@@ -41,12 +41,12 @@ nav:
     - '/'
   Blog:           
     - '/blog/'
-    - { Categories: '/blog/categories/' }
+    # - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
   About:          
     - '/about/'
-  Github Project: 
-    - 'http://my2kong.github.io/'
+#  Github Project:
+#    - 'http://my2kong.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
