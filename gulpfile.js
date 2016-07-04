@@ -76,30 +76,6 @@ gulp.task('watch', function () {
 });
 
 /**
- * FTP upload _site
- */
-gulp.task('ftp', function() {
-    var globs = [
-        '_site/**/',
-        '!_site/**/node_modules/**'
-    ];
-
-    var options = vfb({
-        host: '211.110.165.234',
-        port: '21',
-        userKeyFile: '.ftppass',
-        userKey: 'key1',
-        remotePath: '/public_html',
-        log: true
-    });
-    var conn = ftp.create(options);
-
-    return gulp.src(globs, {buffer: false})
-        .pipe(conn.newer(options.finalRemotePath))
-        .pipe(conn.dest(options.finalRemotePath));
-});
-
-/**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
