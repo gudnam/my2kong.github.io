@@ -105,6 +105,6 @@ git push origin master
 ![Github Repository 파일 확인](/public/img/jekyll-blogging-basic_4.jpg)
 
 
-이제 저장소에 **Github 계정**.github.io 을 입력하면 사이트를 확인할 수 있다.
+이제 브라우저에 **Github 계정**.github.io 을 입력하면 사이트를 확인할 수 있다.
 
 ![Github 계정 주소로 사이트 확인](/public/img/jekyll-blogging-basic_5.jpg)
