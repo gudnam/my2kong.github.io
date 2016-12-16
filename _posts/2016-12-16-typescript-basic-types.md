@@ -45,7 +45,7 @@ color = 'red';
 ```
 
 템플릿 문자열을 사용하면 문자열을 여러 행으로 나누어 작성할 수 있고, 표현식을 넣을수 있습니다. 
-템플릿 문자열은 backtick/backquote (**`**) 문자로 둘러싸여 있으며, 내부에 **${ expr }** 와 같은 표현식도 가능합니다.
+템플릿 문자열은 backtick/backquote (**`**) 문자로 둘러싸여 있으며, 내부에 **${ expr }** 와 같은 표현식이 가능합니다.
 
 ```typescript
 let fullName: string = `Bob Bobbington`;
