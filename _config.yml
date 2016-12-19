@@ -26,7 +26,7 @@ version: 1.0.0
 author:
   name: my2kong
   description: 생계형 프론트엔드 개발자.
-  gravatar: 971e5f01f7cfad2974a6d361803d0778 # md5 hash of your email address
+  # gravatar: 971e5f01f7cfad2974a6d361803d0778 # md5 hash of your email address
   contact:
     # linkedin:  https://www.linkedin.com/in/lizhihao
     # github:    https://github.com/my2kong/
