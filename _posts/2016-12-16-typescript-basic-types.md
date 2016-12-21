@@ -80,7 +80,7 @@ let list: Array<number> = [1, 2, 3];
 ## Tuple
 
 튜플을 사용하면 요소 선언시 고정된 요소들의 수 만큼의 자료형을 미리 선언후 배열을 표현할 수 있습니다.
-예를 들어, 문자열과 숫자의 쌍으로 값을 표시하는 예제입니다.
+문자열과 숫자의 쌍으로 값을 표시하는 예제입니다.
 
 ```typescript
 // Declare a tuple type
@@ -91,14 +91,14 @@ x = ["hello", 10]; // OK
 x = [10, "hello"]; // Error
 ```
 
-알려진 인덱스가 있는 요소에 접근 할 때 올바른 유형이 검색됩니다.
+인덱스가 유요한 요소에 접근 할 때 올바른 유형이 검색됩니다.
 
 ```typescript
 console.log(x[0].substr(1)); // OK
 console.log(x[1].substr(1)); // Error, 'number' does not have 'substr'
 ```
 
-알려진 인덱스 집합을 벗어난 요소에 접근하기 위해서 **union** 타입을 사용할 수 있습니다.
+인덱스가 유요하지 않은 요소에 접근하기 위해서 **union** 타입을 사용할 수 있습니다.
 
 ```typescript
 x[3] = "world"; // OK, 'string' can be assigned to 'string | number'
@@ -205,11 +205,11 @@ let n: null = null;
 
 기본적으로 **null** 및 **undefined**는 다른 모든 유형의 하위 유형이므로 **null**과 **undefined**를 **number**와 같은 것으로 지정할 수 있습니다.
 
-그러나 **--strictNullChecks** 플래그를 사용하는 경우라면 **null** 및 **undefined**는 **void** 및 해당 유형에만 할당 하는것이 많은 일반적인 오류를 피할 수 있는 방법입니다. 
-**string** 또는 **null** 또는 **undefined**을 전달하려는 경우, **string | null | undefined** 에 **unido** 형식을 사용할 수 있습니다. 
+tsconfig.json에 compilerOptions의 **strictNullChecks**를 true로 설정한 경우라면 변수가 **null**값을 갖지 않도록 제약하거나 초기화하지 않고(**undefined**) 사용할 수 없도록 제약할 수 있습니다. 
+**string** 또는 **null** 또는 **undefined**을 전달하려는 경우, **string | null | undefined**과 같은 **unido** 형식을 사용할 수 있습니다. 
 다시 한번, union 타입에 대한 자세한 내용은 다음장에서 설명합니다.
 
-> 가능하다면 --strictNullChecks를 사용하는 것이 좋지만 본 핸드북의 목적상 해제되어 있다고 가정합니다.
+> 가능하다면 --strictNullChecks를 설정하는 것이 좋지만 본 핸드북의 목적상 해제되어 있다고 가정합니다.
 
 ## Never
 
